@@ -11546,7 +11546,7 @@ html {
 
 #jumbotronSlider .carousel-caption {
   right: 50%;
-  text-align: center;
+  text-align: left;
   max-width: 500px;
   left: auto;
   top: 200px;
@@ -11689,4 +11689,33 @@ html {
   color: #000;
   background-color: #ffc107;
   border-color: #ffc107;
+}
+
+#choose-boat {
+  margin: -120px 0px 0px 0px;
+}
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 991px) {
+  .footer {
+    text-align: center;
+  }
+
+  .img-center { 
+    display:block;
+    margin:10px auto;
+  }
+
+  #jumbotronSlider .carousel-caption {
+    text-align: center;
+    max-width: 500px;
+    right: 0;
+    left: 0;
+    /* margin: 0 auto 0 auto; */
+    margin: auto;
+    
+  }
 }
