@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Riara Project</title>
+    <title>Riara Boat</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/logo.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -19,17 +19,20 @@
         type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css?v=1" rel="stylesheet" />
+    <!-- GLightbox-->
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Owl Carousel-->
     <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.theme.default.min.css">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css?v=2" rel="stylesheet" />
 </head>
 
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-light text-capitalize fixed-top" id="mainNav">
         <div class="container">
-            <a href="#"><img class="navbar-brand" src="assets/logo.png" alt="Logo Riara" /></a>
+            <a href="/"><img class="navbar-brand" src="assets/logo.webp" alt="Logo Riara" /></a>
             <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -60,45 +63,73 @@
                 <h1 class="display-4">Deckplan</h1>
             </header>
 
-
             <div class="row">
                 <div class="col-md-3">
                     <!-- Tabs nav -->
                     <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist"
                         aria-orientation="vertical">
-                        <div style="overflow-y:auto; height: 500px;">
-                            <h4>Top Deck</h4>
-                            <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill"
-                                href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                                <span class="font-weight-bold small text-uppercase">Chill Area</span></a>
+                        <!-- <div style="overflow-y:auto; height: 500px;"> -->
+                        <h4>Top Deck</h4>
+                        <a class="nav-link mb-3 p-3 border active" id="v-pills-chill-tab" data-toggle="pill"
+                            href="#v-pills-chill" role="tab" aria-controls="v-pills-chill" aria-selected="true">
+                            <span class="font-weight-bold small text-uppercase">Chill Area</span>
+                        </a>
+                        <a class="nav-link mb-3 p-3 border" id="v-pills-golf-tab" data-toggle="pill"
+                            href="#v-pills-golf" role="tab" aria-controls="v-pills-golf" aria-selected="false">
+                            <span class="font-weight-bold small text-uppercase">Golf Area</span>
+                        </a>
 
-                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-profile-tab" data-toggle="pill"
-                                href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
-                                aria-selected="false">
-                                <span class="font-weight-bold small text-uppercase">Golf Area</span></a>
-                            <h4>Upper Deck</h4>
-                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-messages-tab" data-toggle="pill"
-                                href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
-                                aria-selected="false">
-                                <span class="font-weight-bold small text-uppercase">Cinema Room</span></a>
+                        <h4>Upper Deck</h4>
+                        <a class="nav-link mb-3 p-3 border" id="v-pills-cinema-tab" data-toggle="pill"
+                            href="#v-pills-cinema" role="tab" aria-controls="v-pills-cinema" aria-selected="false">
+                            <span class="font-weight-bold small text-uppercase">Cinema Room</span>
+                        </a>
+                        <a class="nav-link mb-3 p-3 border" id="v-pills-motunui-tab" data-toggle="pill"
+                            href="#v-pills-motunui" role="tab" aria-controls="v-pills-motunui" aria-selected="false">
+                            <span class="font-weight-bold small text-uppercase">Motunui Room</span>
+                        </a>
+                        <a class="nav-link mb-3 p-3 border" id="v-pills-navigation-tab" data-toggle="pill"
+                            href="#v-pills-navigation" role="tab" aria-controls="v-pills-navigation"
+                            aria-selected="false">
+                            <span class="font-weight-bold small text-uppercase">Navigation Room</span>
+                        </a>
 
-                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-settings-tab" data-toggle="pill"
-                                href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
-                                aria-selected="false">
-                                <span class="font-weight-bold small text-uppercase">Motunui Room</span></a>
-                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-settings-tab" data-toggle="pill"
-                                href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
-                                aria-selected="false">
-                                <span class="font-weight-bold small text-uppercase">Navigation Room</span></a>
-                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-settings-tab" data-toggle="pill"
-                                href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
-                                aria-selected="false">
-                                <span class="font-weight-bold small text-uppercase">Navigation Room</span></a>
-                            <a class="nav-link mb-3 p-3 shadow" id="v-pills-settings-tab" data-toggle="pill"
-                                href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
-                                aria-selected="false">
-                                <span class="font-weight-bold small text-uppercase">Navigation Room</span></a>
-                        </div>
+                        <h4>Main Deck</h4>
+                        <a class="nav-link mb-3 p-3 border" id="v-pills-diving-tab" data-toggle="pill"
+                            href="#v-pills-diving" role="tab" aria-controls="v-pills-diving" aria-selected="false">
+                            <span class="font-weight-bold small text-uppercase">Diving Area</span>
+                        </a>
+                        <a class="nav-link mb-3 p-3 border" id="v-pills-hoomaha-tab" data-toggle="pill"
+                            href="#v-pills-hoomaha" role="tab" aria-controls="v-pills-hoomaha" aria-selected="false">
+                            <span class="font-weight-bold small text-uppercase">Ho'omaha Area</span>
+                        </a>
+                        <a class="nav-link mb-3 p-3 border" id="v-pills-savai1-tab" data-toggle="pill"
+                            href="#v-pills-savai1" role="tab" aria-controls="v-pills-savai1" aria-selected="false">
+                            <span class="font-weight-bold small text-uppercase">Sava'i Room 01</span>
+                        </a>
+                        <a class="nav-link mb-3 p-3 border" id="v-pills-savai2-tab" data-toggle="pill"
+                            href="#v-pills-savai2" role="tab" aria-controls="v-pills-savai2" aria-selected="false">
+                            <span class="font-weight-bold small text-uppercase">Sava'i Room 02</span>
+                        </a>
+                        <a class="nav-link mb-3 p-3 border" id="v-pills-opulu-tab" data-toggle="pill"
+                            href="#v-pills-opulu" role="tab" aria-controls="v-pills-opulu" aria-selected="false">
+                            <span class="font-weight-bold small text-uppercase">Opulu Room</span>
+                        </a>
+
+                        <h4>Lower Deck</h4>
+                        <a class="nav-link mb-3 p-3 border" id="v-pills-maui-tab" data-toggle="pill"
+                            href="#v-pills-maui" role="tab" aria-controls="v-pills-maui" aria-selected="false">
+                            <span class="font-weight-bold small text-uppercase">Maui Room</span>
+                        </a>
+                        <a class="nav-link mb-3 p-3 border" id="v-pills-samoa1-tab" data-toggle="pill"
+                            href="#v-pills-samoa1" role="tab" aria-controls="v-pills-samoa1" aria-selected="false">
+                            <span class="font-weight-bold small text-uppercase">Samoa Room 01</span>
+                        </a>
+                        <a class="nav-link mb-3 p-3 border" id="v-pills-samoa2-tab" data-toggle="pill"
+                            href="#v-pills-samoa2" role="tab" aria-controls="v-pills-samoa2" aria-selected="false">
+                            <span class="font-weight-bold small text-uppercase">Samoa Room 02</span>
+                        </a>
+                        <!-- </div> -->
                     </div>
                 </div>
 
@@ -106,48 +137,1385 @@
                 <div class="col-md-9">
                     <!-- Tabs content -->
                     <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home"
-                            role="tabpanel" aria-labelledby="v-pills-home-tab">
-                            <h4 class="font-italic mb-4">Personal information</h4>
-                            <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-chill"
+                            role="tabpanel" aria-labelledby="v-pills-chill-tab">
+                            <img src="assets/deckplan/top-deck/top-deck.webp" alt="Chill Area" width="100%">
+                            <div class="row text-center owl-carousel owl-theme">
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/top-deck/chill01.webp" class="glightbox">
+                                            <img src="assets/deckplan/top-deck/chill01.webp" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/top-deck/chill02.webp" class="glightbox">
+                                            <img src="assets/deckplan/top-deck/chill02.webp" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/top-deck/chill03.webp" class="glightbox">
+                                            <img src="assets/deckplan/top-deck/chill03.webp" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/top-deck/chill04.webp" class="glightbox">
+                                            <img src="assets/deckplan/top-deck/chill04.webp" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/top-deck/chill05.webp" class="glightbox">
+                                            <img src="assets/deckplan/top-deck/chill05.webp" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/top-deck/chill06.webp" class="glightbox">
+                                            <img src="assets/deckplan/top-deck/chill06.webp" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/top-deck/chill07.webp" class="glightbox">
+                                            <img src="assets/deckplan/top-deck/chill07.webp" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/top-deck/chill08.webp" class="glightbox">
+                                            <img src="assets/deckplan/top-deck/chill08.webp" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/top-deck/chill09.webp" class="glightbox">
+                                            <img src="assets/deckplan/top-deck/chill09.webp" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel"
-                            aria-labelledby="v-pills-profile-tab">
-                            <h4 class="font-italic mb-4">Bookings</h4>
-                            <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-golf" role="tabpanel"
+                            aria-labelledby="v-pills-golf-tab">
+                            <img src="assets/deckplan/top-deck/top-deck.webp" alt="Chill Area" width="100%">
+                            <div class="row text-center owl-carousel owl-theme">
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/top-deck/golf01.webp" class="glightbox">
+                                            <img src="assets/deckplan/top-deck/golf01.webp" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/top-deck/golf02.webp" class="glightbox">
+                                            <img src="assets/deckplan/top-deck/golf02.webp" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/top-deck/golf03.webp" class="glightbox">
+                                            <img src="assets/deckplan/top-deck/golf03.webp" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages" role="tabpanel"
-                            aria-labelledby="v-pills-messages-tab">
-                            <h4 class="font-italic mb-4">Reviews</h4>
-                            <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-cinema" role="tabpanel"
+                            aria-labelledby="v-pills-cinema-tab">
+                            <img src="assets/deckplan/upper-deck/upper-deck.webp" alt="Chill Area" width="100%">
+                            <div class="row text-center owl-carousel owl-theme">
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/cinema-room/cinema01.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/cinema-room/cinema01.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/cinema-room/cinema02.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/cinema-room/cinema02.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/cinema-room/cinema03.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/cinema-room/cinema03.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/cinema-room/cinema04.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/cinema-room/cinema04.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/cinema-room/cinema05.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/cinema-room/cinema05.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/cinema-room/cinema06.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/cinema-room/cinema06.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/cinema-room/cinema07.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/cinema-room/cinema07.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/cinema-room/cinema08.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/cinema-room/cinema08.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/cinema-room/cinema09.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/cinema-room/cinema09.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/cinema-room/cinema10.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/cinema-room/cinema10.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/cinema-room/cinema11.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/cinema-room/cinema11.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/cinema-room/cinema12.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/cinema-room/cinema12.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/cinema-room/cinema13.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/cinema-room/cinema13.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-settings" role="tabpanel"
-                            aria-labelledby="v-pills-settings-tab">
-                            <h4 class="font-italic mb-4">Confirm booking</h4>
-                            <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-motunui" role="tabpanel"
+                            aria-labelledby="v-pills-motunui-tab">
+                            <img src="assets/deckplan/upper-deck/upper-deck.webp" alt="Chill Area" width="100%">
+                            <div class="row text-center owl-carousel owl-theme">
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui01.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui01.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui02.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui02.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui03.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui03.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui04.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui04.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui05.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui05.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui06.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui06.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui07.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui07.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui08.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui08.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui09.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui09.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui10.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui10.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui11.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui11.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui12.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui12.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui13.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui13.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui14.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui14.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui15.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui15.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui16.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui16.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui17.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui17.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui18.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui18.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui19.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui19.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/motunui-room/motunui20.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/motunui-room/motunui20.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-navigation" role="tabpanel"
+                            aria-labelledby="v-pills-navigation-tab">
+                            <img src="assets/deckplan/upper-deck/upper-deck.webp" alt="Chill Area" width="100%">
+                            <div class="row text-center owl-carousel owl-theme">
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/navigation-room/navigation01.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/navigation-room/navigation01.webp"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/navigation-room/navigation02.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/navigation-room/navigation02.webp"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/navigation-room/navigation03.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/navigation-room/navigation03.webp"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/navigation-room/navigation04.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/navigation-room/navigation04.webp"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/navigation-room/navigation05.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/navigation-room/navigation05.webp"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/navigation-room/navigation06.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/navigation-room/navigation06.webp"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/navigation-room/navigation07.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/navigation-room/navigation07.webp"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/navigation-room/navigation08.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/navigation-room/navigation08.webp"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/navigation-room/navigation09.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/navigation-room/navigation09.webp"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/navigation-room/navigation10.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/navigation-room/navigation10.webp"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/navigation-room/navigation11.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/navigation-room/navigation11.webp"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/upper-deck/navigation-room/navigation12.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/upper-deck/navigation-room/navigation12.webp"
+                                                alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-diving" role="tabpanel"
+                            aria-labelledby="v-pills-diving-tab">
+                            <img src="assets/deckplan/main-deck/main-deck.webp" alt="Chill Area" width="100%">
+                            <div class="row text-center owl-carousel owl-theme">
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/diving-area/diving01.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/diving-area/diving01.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/diving-area/diving02.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/diving-area/diving02.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/diving-area/diving03.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/diving-area/diving03.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/diving-area/diving04.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/diving-area/diving04.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/diving-area/diving05.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/diving-area/diving05.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/diving-area/diving06.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/diving-area/diving06.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/diving-area/diving07.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/diving-area/diving07.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/diving-area/diving08.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/diving-area/diving08.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/diving-area/diving09.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/diving-area/diving09.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-hoomaha" role="tabpanel"
+                            aria-labelledby="v-pills-hoomaha-tab">
+                            <img src="assets/deckplan/main-deck/main-deck.webp" alt="Chill Area" width="100%">
+                            <div class="row text-center owl-carousel owl-theme">
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/hoomaha-area/hoomaha01.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/main-deck/hoomaha-area/hoomaha01.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/hoomaha-area/hoomaha02.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/main-deck/hoomaha-area/hoomaha02.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/hoomaha-area/hoomaha03.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/main-deck/hoomaha-area/hoomaha03.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/hoomaha-area/hoomaha04.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/main-deck/hoomaha-area/hoomaha04.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/hoomaha-area/hoomaha05.webp"
+                                            class="glightbox">
+                                            <img src="assets/deckplan/main-deck/hoomaha-area/hoomaha05.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-savai1" role="tabpanel"
+                            aria-labelledby="v-pills-savai1-tab">
+                            <img src="assets/deckplan/main-deck/main-deck.webp" alt="Chill Area" width="100%">
+                            <div class="row text-center owl-carousel owl-theme">
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai01.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai01.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai02.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai02.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai03.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai03.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai04.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai04.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai05.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai05.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai06.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai06.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai07.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai07.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai08.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai08.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai09.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai09.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai10.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai10.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai11.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai11.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai12.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai12.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai13.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai13.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai14.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai14.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-savai2" role="tabpanel"
+                            aria-labelledby="v-pills-savai2-tab">
+                            <img src="assets/deckplan/main-deck/main-deck.webp" alt="Chill Area" width="100%">
+                            <div class="row text-center owl-carousel owl-theme">
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai01.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai01.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai02.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai02.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai03.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai03.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai04.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai04.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai05.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai05.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai06.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai06.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai07.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai07.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai08.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai08.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai09.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai09.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai10.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai10.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai11.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai11.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai12.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai12.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai13.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai13.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/savai-room/savai14.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/savai-room/savai14.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-opulu" role="tabpanel"
+                            aria-labelledby="v-pills-opulu-tab">
+                            <img src="assets/deckplan/main-deck/main-deck.webp" alt="Chill Area" width="100%">
+                            <div class="row text-center owl-carousel owl-theme">
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu01.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu01.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu02.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu02.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu03.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu03.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu04.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu04.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu05.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu05.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu06.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu06.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu07.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu07.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu08.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu08.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu09.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu09.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu10.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu10.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu11.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu11.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu12.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu12.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu13.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu13.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu14.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu14.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu15.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu15.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu16.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu16.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu17.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu17.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu18.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu18.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu19.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu19.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu20.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu20.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu21.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu21.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu22.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu22.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu23.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu23.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu24.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu24.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu25.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu25.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu26.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu26.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu27.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu27.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu28.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu28.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/main-deck/opulu-room/opulu29.webp" class="glightbox">
+                                            <img src="assets/deckplan/main-deck/opulu-room/opulu29.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-maui" role="tabpanel"
+                            aria-labelledby="v-pills-maui-tab">
+                            <img src="assets/deckplan/lower-deck/lower-deck.webp" alt="Chill Area" width="100%">
+                            <div class="row text-center owl-carousel owl-theme">
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/maui-room/maui01.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/maui-room/maui01.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/maui-room/maui02.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/maui-room/maui02.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/maui-room/maui03.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/maui-room/maui03.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/maui-room/maui04.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/maui-room/maui04.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/maui-room/maui05.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/maui-room/maui05.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/maui-room/maui06.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/maui-room/maui06.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/maui-room/maui07.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/maui-room/maui07.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/maui-room/maui08.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/maui-room/maui08.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-samoa1" role="tabpanel"
+                            aria-labelledby="v-pills-samoa1-tab">
+                            <img src="assets/deckplan/lower-deck/lower-deck.webp" alt="Chill Area" width="100%">
+                            <div class="row text-center owl-carousel owl-theme">
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa01.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa01.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa02.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa02.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa03.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa03.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa04.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa04.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa05.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa05.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa06.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa06.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa07.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa07.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa08.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa08.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa09.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa09.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa10.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa10.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa11.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa11.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-samoa2" role="tabpanel"
+                            aria-labelledby="v-pills-samoa2-tab">
+                            <img src="assets/deckplan/lower-deck/lower-deck.webp" alt="Chill Area" width="100%">
+                            <div class="row text-center owl-carousel owl-theme">
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa01.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa01.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa02.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa02.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa03.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa03.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa04.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa04.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa05.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa05.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa06.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa06.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa07.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa07.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa08.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa08.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa09.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa09.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa10.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa10.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="gallery-item">
+                                        <a href="assets/deckplan/lower-deck/samoa-room/samoa11.webp" class="glightbox">
+                                            <img src="assets/deckplan/lower-deck/samoa-room/samoa11.webp" alt=""
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -157,12 +1525,12 @@
 
     <!-- Footer-->
     <footer class="footer" style="margin-top: 100px;">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <!-- Footer Location-->
                 <div class="col-lg-7 mb-5 mb-lg-0">
                     <div class="row">
-                        <img class="col-lg-5 img-center" style="width: auto;" src="assets/logo-footer.png" alt="Logo">
+                        <img class="col-lg-5 img-center" style="width: auto;" src="assets/logo-footer.webp" alt="Logo">
                         <div class="col-lg-7">
                             <h4 class="text-capitalize mb-3">Riara Project</h4>
                             <p class="mb-3">
@@ -213,8 +1581,103 @@
     <!-- Core theme JS-->
     <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
-    <script src="js/scripts.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="js/scripts.js?v=2"></script>
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                navText: ['<span class="fas fa-chevron-left fa-2x"></span>', '<span class="fas fa-chevron-right fa-2x"></span>'],
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 4,
+                        nav: false,
+                        loop: true,
+                        margin: 20
+                    }
+                }
+            })
+        })
+    </script>
+    <script>
+        var lightbox = GLightbox();
+        lightbox.on('open', (target) => {
+            console.log('lightbox opened');
+        });
+        var lightboxDescription = GLightbox({
+            selector: '.glightbox2'
+        });
+        var lightboxVideo = GLightbox({
+            selector: '.glightbox3'
+        });
+        lightboxVideo.on('slide_changed', ({
+            prev,
+            current
+        }) => {
+            console.log('Prev slide', prev);
+            console.log('Current slide', current);
+
+            const {
+                slideIndex,
+                slideNode,
+                slideConfig,
+                player
+            } = current;
+
+            if (player) {
+                if (!player.ready) {
+                    // If player is not ready
+                    player.on('ready', (event) => {
+                        // Do something when video is ready
+                    });
+                }
+
+                player.on('play', (event) => {
+                    console.log('Started play');
+                });
+
+                player.on('volumechange', (event) => {
+                    console.log('Volume change');
+                });
+
+                player.on('ended', (event) => {
+                    console.log('Video ended');
+                });
+            }
+        });
+
+        var lightboxInlineIframe = GLightbox({
+            selector: '.glightbox4'
+        });
+
+        /* var exampleApi = GLightbox({ selector: null });
+        exampleApi.insertSlide({
+            href: 'https://picsum.photos/1200/800',
+        });
+        exampleApi.insertSlide({
+            width: '500px',
+            content: '<p>Example</p>'
+        });
+        exampleApi.insertSlide({
+            href: 'https://www.youtube.com/watch?v=WzqrwPhXmew',
+        });
+        exampleApi.insertSlide({
+            width: '200vw',
+            content: document.getElementById('inline-example')
+        });
+        exampleApi.open(); */
+    </script>
 </body>
 
 </html>
