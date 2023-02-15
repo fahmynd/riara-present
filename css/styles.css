@@ -11592,7 +11592,7 @@ html {
 .information .alert-boat {
   text-align: center;
   color: #297284;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-color: #297284;
 }
 
@@ -11610,7 +11610,7 @@ html {
   font-weight: bold;
   text-align: left;
   color: #297284;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-color: #297284;
 }
 
@@ -12142,4 +12142,10 @@ img.goog-te-gadget-icon {
   right: 0;
   width: 100%;
   z-index: -1000;
+}
+
+@media (max-width: 767px) {
+  #v-pills-diving, #v-pills-hoomaha, #v-pills-savai1, #v-pills-savai2, #v-pills-opulu, #v-pills-maui, #v-pills-samoa1, #v-pills-samoa2 {
+    margin-top: 0 !important;
+  }
 }
