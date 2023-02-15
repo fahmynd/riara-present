@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8" />
@@ -25,7 +25,9 @@
     <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.theme.default.min.css">
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css?v=2" rel="stylesheet" />
+    <link href="css/styles.css?v=3" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link href="vendor/scalize/css/scalize.min.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -51,6 +53,18 @@
                     </li>
                     <li class="nav-item mx-0 mx-lg-1 my-auto"><a class="nav-link active py-2 px-0 px-lg-3 rounded"
                             href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1 my-auto">
+                        <div id="google_translate_element"></div>
+
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+                            }
+                        </script>
+
+                        <script type="text/javascript"
+                            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                     </li>
                 </ul>
             </div>
@@ -137,9 +151,18 @@
                 <div class="col-md-9">
                     <!-- Tabs content -->
                     <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-chill"
-                            role="tabpanel" aria-labelledby="v-pills-chill-tab">
-                            <img src="assets/deckplan/top-deck/top-deck.webp" alt="Chill Area" width="100%">
+                        <div class="tab-pane fade show active p-5" id="v-pills-chill" role="tabpanel"
+                            aria-labelledby="v-pills-chill-tab">
+                            <div class="scalize">
+                                <img src="assets/deckplan/top-deck/top-deck.webp" alt="Chill Area" width="100%"
+                                    class="target">
+                                <div class="item-point" data-top="1300" data-left="450">
+                                    <div><a data-toggle="pill" href="#v-pills-golf" class="toggle"></a></div>
+                                </div>
+                                <div class="item-point" data-top="1300" data-left="2100">
+                                    <div><a data-toggle="pill" href="#v-pills-chill" class="toggle"></a></div>
+                                </div>
+                            </div>
                             <div class="row text-center owl-carousel owl-theme">
                                 <div class="col">
                                     <div class="gallery-item">
@@ -206,9 +229,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-golf" role="tabpanel"
+                        <div class="tab-pane fade p-5" id="v-pills-golf" role="tabpanel"
                             aria-labelledby="v-pills-golf-tab">
-                            <img src="assets/deckplan/top-deck/top-deck.webp" alt="Chill Area" width="100%">
+                            <img src="assets/deckplan/top-deck/top-deck.webp" alt="Golf Area" width="100%">
                             <div class="row text-center owl-carousel owl-theme">
                                 <div class="col">
                                     <div class="gallery-item">
@@ -233,7 +256,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-cinema" role="tabpanel"
+                        <div class="tab-pane fade p-5" id="v-pills-cinema" role="tabpanel"
                             aria-labelledby="v-pills-cinema-tab">
                             <img src="assets/deckplan/upper-deck/upper-deck.webp" alt="Chill Area" width="100%">
                             <div class="row text-center owl-carousel owl-theme">
@@ -356,7 +379,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-motunui" role="tabpanel"
+                        <div class="tab-pane fade p-5" id="v-pills-motunui" role="tabpanel"
                             aria-labelledby="v-pills-motunui-tab">
                             <img src="assets/deckplan/upper-deck/upper-deck.webp" alt="Chill Area" width="100%">
                             <div class="row text-center owl-carousel owl-theme">
@@ -542,7 +565,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-navigation" role="tabpanel"
+                        <div class="tab-pane fade p-5" id="v-pills-navigation" role="tabpanel"
                             aria-labelledby="v-pills-navigation-tab">
                             <img src="assets/deckplan/upper-deck/upper-deck.webp" alt="Chill Area" width="100%">
                             <div class="row text-center owl-carousel owl-theme">
@@ -656,7 +679,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-diving" role="tabpanel"
+                        <div class="tab-pane fade p-5" id="v-pills-diving" role="tabpanel"
                             aria-labelledby="v-pills-diving-tab">
                             <img src="assets/deckplan/main-deck/main-deck.webp" alt="Chill Area" width="100%">
                             <div class="row text-center owl-carousel owl-theme">
@@ -734,7 +757,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-hoomaha" role="tabpanel"
+                        <div class="tab-pane fade p-5" id="v-pills-hoomaha" role="tabpanel"
                             aria-labelledby="v-pills-hoomaha-tab">
                             <img src="assets/deckplan/main-deck/main-deck.webp" alt="Chill Area" width="100%">
                             <div class="row text-center owl-carousel owl-theme">
@@ -785,7 +808,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-savai1" role="tabpanel"
+                        <div class="tab-pane fade p-5" id="v-pills-savai1" role="tabpanel"
                             aria-labelledby="v-pills-savai1-tab">
                             <img src="assets/deckplan/main-deck/main-deck.webp" alt="Chill Area" width="100%">
                             <div class="row text-center owl-carousel owl-theme">
@@ -903,7 +926,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-savai2" role="tabpanel"
+                        <div class="tab-pane fade p-5" id="v-pills-savai2" role="tabpanel"
                             aria-labelledby="v-pills-savai2-tab">
                             <img src="assets/deckplan/main-deck/main-deck.webp" alt="Chill Area" width="100%">
                             <div class="row text-center owl-carousel owl-theme">
@@ -1021,7 +1044,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-opulu" role="tabpanel"
+                        <div class="tab-pane fade p-5" id="v-pills-opulu" role="tabpanel"
                             aria-labelledby="v-pills-opulu-tab">
                             <img src="assets/deckplan/main-deck/main-deck.webp" alt="Chill Area" width="100%">
                             <div class="row text-center owl-carousel owl-theme">
@@ -1259,7 +1282,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-maui" role="tabpanel"
+                        <div class="tab-pane fade p-5" id="v-pills-maui" role="tabpanel"
                             aria-labelledby="v-pills-maui-tab">
                             <img src="assets/deckplan/lower-deck/lower-deck.webp" alt="Chill Area" width="100%">
                             <div class="row text-center owl-carousel owl-theme">
@@ -1329,7 +1352,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-samoa1" role="tabpanel"
+                        <div class="tab-pane fade p-5" id="v-pills-samoa1" role="tabpanel"
                             aria-labelledby="v-pills-samoa1-tab">
                             <img src="assets/deckplan/lower-deck/lower-deck.webp" alt="Chill Area" width="100%">
                             <div class="row text-center owl-carousel owl-theme">
@@ -1423,7 +1446,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-samoa2" role="tabpanel"
+                        <div class="tab-pane fade p-5" id="v-pills-samoa2" role="tabpanel"
                             aria-labelledby="v-pills-samoa2-tab">
                             <img src="assets/deckplan/lower-deck/lower-deck.webp" alt="Chill Area" width="100%">
                             <div class="row text-center owl-carousel owl-theme">
@@ -1583,7 +1606,20 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
     <script src="vendor/glightbox/js/glightbox.min.js"></script>
     <script src="js/scripts.js?v=2"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="vendor/scalize/js/scalize.min.js"></script>
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.scalize').scalize({
+                styleSelector: 'circle',
+                animationPopoverIn: 'flipInY',
+                animationPopoverOut: 'flipOutY',
+                animationSelector: 'pulse2'
+            });
+        });
+    </script>
     <script>
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
