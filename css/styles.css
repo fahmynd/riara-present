@@ -6861,7 +6861,7 @@ textarea.form-control-lg {
 }
 
 .border {
-  border: 0.125rem solid #dee2e6 !important;
+  border: 0.125rem solid #297284 !important;
 }
 
 .border-0 {
@@ -11717,6 +11717,10 @@ html {
     /* margin: 0 auto 0 auto; */
     margin: auto;
     
+  }
+
+  #switch {
+    border: none !important;
   }
 }
 
