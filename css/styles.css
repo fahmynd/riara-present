@@ -12119,3 +12119,27 @@ img.goog-te-gadget-icon {
 .goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed {
   color: #297284 !important;
 }
+
+#blobs-1 {
+  position: absolute;
+  top: 800px;
+  right: 0;
+  width: 80%;
+  z-index: -1000;
+}
+
+#blobs-2 {
+  position: absolute;
+  top: 2500px;
+  right: 0;
+  width: 100%;
+  z-index: -1000;
+}
+
+#blobs-3 {
+  position: absolute;
+  bottom: 550px;
+  right: 0;
+  width: 100%;
+  z-index: -1000;
+}
