@@ -232,8 +232,8 @@ sup {
 }
 
 a {
-  color: #1abc9c;
-  text-decoration: underline;
+  color: #297284;
+  text-decoration: none;
 }
 a:hover {
   color: #15967d;
@@ -11544,16 +11544,55 @@ html {
   height: 100vh;
 }
 
-#jumbotronSlider .carousel-caption {
+#jumbotronSlider .jumbotron1-caption {
   right: 50%;
   text-align: left;
   max-width: 500px;
   left: auto;
+  top: 180px;
+}
+
+#jumbotronSlider .jumbotron2-caption {
+  right: 0;
+  text-align: center;
+  /* max-width: 500px; */
+  left: 0;
   top: 200px;
 }
 
 #jumbotronSlider .carousel-indicators {
   bottom: 110px;
+}
+
+#profilSlider .carousel-item img {  
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  width: 100%;
+  height:450px;
+}
+
+#profilSlider .carousel-item:before {
+  content: "";
+  background: linear-gradient(269.8deg, #297284 0.53%, rgba(41, 114, 132, 0.5) 50.45%, rgba(41, 114, 132, 0.05) 99.8%);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#profilSlider .carousel-caption {
+  right: 50%;
+  text-align: left;
+  max-width: 500px;
+  left: auto;
+  top: 100px;
+}
+
+#profilSlider .carousel-indicators {
+  bottom: 0;
 }
 
 .containerImg {
@@ -11709,7 +11748,7 @@ html {
     margin:10px auto;
   }
 
-  #jumbotronSlider .carousel-caption {
+  #jumbotronSlider .jumbotron1-caption {
     text-align: center;
     max-width: 500px;
     right: 0;
