@@ -11784,20 +11784,24 @@ html {
 }
 
 .multi_step_form {
-  background: #f6f9fb;
+  /* background: #f6f9fb; */
   display: block;
   overflow-x: hidden;
 }
 .multi_step_form #msform {
-  text-align: center;
+  text-align: left;
   position: relative;
   padding-top: 50px;
   min-height: 820px;
     height: auto;
-  max-width: 820px;
+  max-width: 1000px;
   margin: 0 auto;
   background: #ffffff;
   z-index: 1;
+}
+
+.multi_step_form #msform #progressbar {
+  text-align: center;
 }
 .multi_step_form #msform .tittle {
   text-align: center;
@@ -12085,14 +12089,14 @@ html {
   color: white;
 }
 .multi_step_form #msform .action-button {
-  background: var(--bs-primary);
+  /* background: var(--bs-primary); */
   color: white;
   border: 0 none;
   border-radius: 5px;
   cursor: pointer;
   min-width: 130px;
   font: 700 14px/40px "Roboto", sans-serif;
-  border: 1px solid var(--bs-primary);
+  /* border: 1px solid var(--bs-primary); */
   margin: 0 5px;
   text-transform: uppercase;
   display: inline-block;
@@ -12233,4 +12237,8 @@ img.goog-te-gadget-icon {
     font-size: 5px !important;
     bottom: 0px !important;
   }
+}
+
+#footer a {
+  color: #fff;
 }
