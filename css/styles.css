@@ -11603,8 +11603,8 @@ html {
 
 .bottom-left {
   position: absolute;
-  bottom: 20px;
-  left: 28px;
+  bottom: 10px;
+  left: 20px;
 }
 
 .bg-boat {
@@ -12189,7 +12189,7 @@ img.goog-te-gadget-icon {
 
 #blobs-2 {
   position: absolute;
-  top: 2500px;
+  top: 2000px;
   right: 0;
   width: 100%;
   z-index: -1000;
@@ -12225,10 +12225,12 @@ img.goog-te-gadget-icon {
 
 @media (max-width: 500px) {
   #choose-boat h4 {
-    font-size: 5px !important;
+    font-size: 7px !important;
+    margin: 0 !important;
   }
 
   .bottom-left {
     font-size: 5px !important;
+    bottom: 0px !important;
   }
 }
