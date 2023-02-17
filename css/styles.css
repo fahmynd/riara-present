@@ -12216,3 +12216,19 @@ img.goog-te-gadget-icon {
     text-align: center !important;
   }
 }
+
+@media (max-width: 575px) {
+  #choose-boat {
+    margin: -50px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  #choose-boat h4 {
+    font-size: 5px !important;
+  }
+
+  .bottom-left {
+    font-size: 5px !important;
+  }
+}
