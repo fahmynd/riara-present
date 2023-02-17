@@ -11734,11 +11734,21 @@ html {
   margin: -120px 0px 0px 0px;
 }
 
-@media (max-width: 575px) {
-
-}
-
 @media (max-width: 991px) {
+  .bg-boat {
+    padding: 5px 5px;
+  }
+
+  #choose-boat h4 {
+    font-size: 10px !important;
+  }
+
+  .bottom-left {
+    font-size: 10px;
+    bottom: 5px;
+    left: 15px;
+  }
+
   .footer {
     text-align: center;
   }
@@ -11749,6 +11759,16 @@ html {
   }
 
   #jumbotronSlider .jumbotron1-caption {
+    text-align: center;
+    max-width: 500px;
+    right: 0;
+    left: 0;
+    /* margin: 0 auto 0 auto; */
+    margin: auto;
+    
+  }
+
+  #profilSlider .carousel-caption {
     text-align: center;
     max-width: 500px;
     right: 0;
@@ -12186,5 +12206,13 @@ img.goog-te-gadget-icon {
 @media (max-width: 767px) {
   #v-pills-diving, #v-pills-hoomaha, #v-pills-savai1, #v-pills-savai2, #v-pills-opulu, #v-pills-maui, #v-pills-samoa1, #v-pills-samoa2 {
     margin-top: 0 !important;
+  }
+
+  #profilSlider .carousel-caption {
+    max-width: 300px;
+  }
+
+  #service .text-end, #service .count-desc {
+    text-align: center !important;
   }
 }
