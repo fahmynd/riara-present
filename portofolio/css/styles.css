@@ -3950,6 +3950,9 @@ textarea.form-control-lg {
 }
 .nav-link:hover, .nav-link:focus {
   color: #15967d;
+  /* text-decoration: underline 2px #15967d;
+  text-underline-offset: 10px; */
+  /* border-bottom: 2px solid #15967d; */
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -11383,14 +11386,31 @@ html {
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: #297284;
 }
+#mainNav .navbar-nav li.nav-item a.nav-link.contact:hover {
+  color: #15967d;
+  text-decoration: none;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active-switch:hover {
+  color: #15967d;
+  text-decoration: none;
+}
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: #15967d;
+  text-decoration: underline 2px #15967d;
+  text-underline-offset: 10px;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #297284;
+  color: #15967d;
+  text-decoration: underline 2px #15967d;
+  text-underline-offset: 10px;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: var(--bs-primary);
+  color: #15967d;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active-switch {
+  color: #15967d;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11410,13 +11430,23 @@ html {
   #mainNav .navbar-nav {
     margin-top: 0;
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.contact {
     color: #fff;
     background: var(--bs-primary);
   }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+    color: #15967d;
+    text-decoration: underline 2px #15967d;
+    text-underline-offset: 10px;
+  }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #15967d;
+    text-decoration: underline 2px #15967d;
+    text-underline-offset: 10px;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.contact:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.contact:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.contact:hover {
     color: #fff;
-    background: #1abc9c;
+    background: var(--bs-primary);
   }
 
   #mainNav.navbar-shrink {
@@ -11783,21 +11813,29 @@ html {
   }
 }
 
+#switch {
+  display: inherit;
+  align-items: center;
+}
 .multi_step_form {
-  background: #f6f9fb;
+  /* background: #f6f9fb; */
   display: block;
   overflow-x: hidden;
 }
 .multi_step_form #msform {
-  text-align: center;
+  text-align: left;
   position: relative;
   padding-top: 50px;
   min-height: 820px;
     height: auto;
-  max-width: 820px;
+  max-width: 1000px;
   margin: 0 auto;
   background: #ffffff;
   z-index: 1;
+}
+
+.multi_step_form #msform #progressbar {
+  text-align: center;
 }
 .multi_step_form #msform .tittle {
   text-align: center;
@@ -12085,14 +12123,14 @@ html {
   color: white;
 }
 .multi_step_form #msform .action-button {
-  background: var(--bs-primary);
+  /* background: var(--bs-primary); */
   color: white;
   border: 0 none;
   border-radius: 5px;
   cursor: pointer;
   min-width: 130px;
   font: 700 14px/40px "Roboto", sans-serif;
-  border: 1px solid var(--bs-primary);
+  /* border: 1px solid var(--bs-primary); */
   margin: 0 5px;
   text-transform: uppercase;
   display: inline-block;
@@ -12203,6 +12241,14 @@ img.goog-te-gadget-icon {
   z-index: -1000;
 }
 
+#blobs-4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  z-index: -1000;
+}
+
 @media (max-width: 767px) {
   #v-pills-diving, #v-pills-hoomaha, #v-pills-savai1, #v-pills-savai2, #v-pills-opulu, #v-pills-maui, #v-pills-samoa1, #v-pills-samoa2 {
     margin-top: 0 !important;
@@ -12215,6 +12261,17 @@ img.goog-te-gadget-icon {
   #service .text-end, #service .count-desc {
     text-align: center !important;
   }
+  .footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* background-color: #2c3e50; */
+    color: #fff;
+    background: url("../assets/img/bg-footer.webp") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+  
 }
 
 @media (max-width: 575px) {
@@ -12237,4 +12294,8 @@ img.goog-te-gadget-icon {
 
 #footer a {
   color: #fff;
+}
+
+#footer a:hover {
+  font-weight: 700;
 }
