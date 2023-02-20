@@ -3950,6 +3950,9 @@ textarea.form-control-lg {
 }
 .nav-link:hover, .nav-link:focus {
   color: #15967d;
+  /* text-decoration: underline 2px #15967d;
+  text-underline-offset: 10px; */
+  /* border-bottom: 2px solid #15967d; */
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -11383,14 +11386,31 @@ html {
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: #297284;
 }
+#mainNav .navbar-nav li.nav-item a.nav-link.contact:hover {
+  color: #15967d;
+  text-decoration: none;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active-switch:hover {
+  color: #15967d;
+  text-decoration: none;
+}
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: #15967d;
+  text-decoration: underline 2px #15967d;
+  text-underline-offset: 10px;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #297284;
+  color: #15967d;
+  text-decoration: underline 2px #15967d;
+  text-underline-offset: 10px;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: var(--bs-primary);
+  color: #15967d;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active-switch {
+  color: #15967d;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11410,13 +11430,23 @@ html {
   #mainNav .navbar-nav {
     margin-top: 0;
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.contact {
     color: #fff;
     background: var(--bs-primary);
   }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+    color: #15967d;
+    text-decoration: underline 2px #15967d;
+    text-underline-offset: 10px;
+  }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #15967d;
+    text-decoration: underline 2px #15967d;
+    text-underline-offset: 10px;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.contact:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.contact:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.contact:hover {
     color: #fff;
-    background: #1abc9c;
+    background: var(--bs-primary);
   }
 
   #mainNav.navbar-shrink {
@@ -11783,6 +11813,10 @@ html {
   }
 }
 
+#switch {
+  display: inherit;
+  align-items: center;
+}
 .multi_step_form {
   /* background: #f6f9fb; */
   display: block;
