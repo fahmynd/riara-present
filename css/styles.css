@@ -11810,6 +11810,14 @@ html {
   #switch {
     border: none !important;
   }
+
+  .information {
+    text-align: center;
+  }
+
+  .alert-boat {
+    margin: auto;
+  }
 }
 
 #switch {
@@ -12253,6 +12261,10 @@ img.goog-te-gadget-icon {
     margin-top: 0 !important;
   }
 
+  #jumbotronSlider .jumbotron1-caption {
+    max-width: 300px;
+  }
+
   #profilSlider .carousel-caption {
     max-width: 300px;
   }
@@ -12274,9 +12286,6 @@ img.goog-te-gadget-icon {
 }
 
 @media (max-width: 575px) {
-  #choose-boat {
-    margin: -50px 0px 0px 0px;
-  }
   #choose-boat h4 {
     font-size: 15px !important;
   }
