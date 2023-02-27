@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.theme.default.min.css">
     <!-- Core theme CSS (includes Bootstrap) -->
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css'>
     <link href="css/styles.css?v=7" rel="stylesheet" />
 </head>
 
@@ -201,7 +203,7 @@
                     </p>
                 </article>
             </div>
-            <div class="col-lg-4">
+            <div id="checkout" class="col-lg-4">
                 <div class="card shadow">
                     <div class="card-body">
                         <h6 class="fw-normal" style="font-family: poppins;">Starting from</h6>
@@ -213,24 +215,20 @@
                             </h2>
                         </div>
                         <form class="row g-1">
-                            <div class="col-md-8">
+                            <div class="col-md-7">
                                 <div class="form-floating mb-3">
-                                    <select class="form-select" id="floatingSelect" aria-label="State">
-                                        <option selected>New York</option>
-                                        <option value="1">Oregon</option>
-                                        <option value="2">DC</option>
-                                    </select>
-                                    <label for="floatingSelect">Trip Schedule</label>
+                                    <input id="datepicker" class="form-select" />
+                                    <label for="datepicker"><i class="fa fa-calendar"></i> Trip Schedule</label>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                                 <div class="form-floating mb-3">
-                                    <select class="form-select" id="floatingSelect" aria-label="State">
-                                        <option selected>New York</option>
-                                        <option value="1">Oregon</option>
-                                        <option value="2">DC</option>
+                                    <select class="form-select" id="floatingSelect" aria-label="Grup Size">
+                                        <option selected>6 Adults</option>
+                                        <option value="1">5 Adults</option>
+                                        <option value="2">4 Adults</option>
                                     </select>
-                                    <label for="floatingSelect">Grup Size</label>
+                                    <label for="floatingSelect"><i class="fa fa-user"></i> Grup Size</label>
                                 </div>
                             </div>
                             <div class="text-center mt-5">
@@ -349,7 +347,14 @@
     <!-- Core theme JS -->
     <script src="js/scripts.js?v=2"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script
+        src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js'></script>
     <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $(function () {
+            $('#datepicker').datepicker();
+        });
+    </script>
     <script>
         $('.carousel-main').owlCarousel({
             items: 7,

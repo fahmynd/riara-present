@@ -12616,3 +12616,8 @@ img.goog-te-gadget-icon {
 .fix-wide {
   box-sizing: content-box;
 }
+
+#checkout label {
+  font-size: 20px;
+  margin-left: 7px;
+}
