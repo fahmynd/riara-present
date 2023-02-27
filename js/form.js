@@ -157,7 +157,7 @@ window.addEventListener('DOMContentLoaded', event => {
     function phoneNoselect() {
         if ($('#msform').length) {
             $("#phone").intlTelInput();
-            $("#phone").intlTelInput("setNumber", "+880");
+            $("#phone").intlTelInput("setNumber", "+62");
         };
     };
     //* Select js

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <title>Riara Project</title>
+  <title>Order Boat | Riara Project</title>
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="assets/logo.ico" />
   <!-- Font Awesome icons (free version)-->
@@ -33,6 +33,7 @@
 
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css?v=2" rel="stylesheet" />
+  <link rel="stylesheet" href="css/portfolio.css">
 </head>
 
 <body id="page-top">
@@ -98,9 +99,8 @@
           </ul>
           <!-- fieldsets -->
           <fieldset>
-            <!-- Name input -->
             <div class="row">
-              <h4 class="mb-4 boat-title" style="font-family: Poppins;">Contact Information</h4>
+              <h4 class="mb-4 boat-title font-poppins">Contact Information</h4>
               <div class="mb-3 col">
                 <i class="fa-solid fa-user"></i>
                 <label class="form-label" for="first_name"> Name</label>
@@ -111,92 +111,234 @@
                 <input class="form-control" id="last_name" type="text" placeholder="*Your last name" />
               </div>
             </div>
-
-            <!-- Country input -->
             <div class="mb-3">
               <i class="fa-solid fa-globe"></i>
               <label class="form-label" for="country"> Country</label>
-              <input class="form-control" id="country" type="email" placeholder="*Indonesia" />
+              <input class="form-control" id="country" type="text" placeholder="*Indonesia" />
             </div>
-
-            <!-- Email address input -->
             <div class="mb-3">
               <i class="fa-solid fa-envelope"></i>
               <label class="form-label" for="emailAddress"> E-mail</label>
               <input class="form-control" id="emailAddress" type="email" placeholder="*example@mail.com" />
             </div>
-
-            <!-- Phone input -->
             <div class="mb-3">
               <i class="fa-solid fa-phone"></i>
               <label class="form-label" for="phone"> Phone</label>
-              <input class="form-control" id="phone" type="email" placeholder="*Please enter your mobile number" />
+              <input class="form-control" id="phone" type="tel" placeholder="*Please enter your mobile number" />
             </div>
-
-            <!-- Form submit button -->
-            <div class="row">
-              <button class="btn btn-boat btn-lg next action-button col-md-3" type="submit">Next</button>
-              <p class="col m-auto">*The information you provide in this request will be sent directly to the broker. We
-                will
-                not share
-                your information with any other person.</p>
-            </div>
-
+            <button class="btn btn-boat btn-lg next action-button float-start me-4" type="button">Next</button>
+            <p>*The information you provide in this request will be sent directly to the broker. We
+              will
+              not share
+              your information with any other person.</p>
           </fieldset>
-          <fieldset>
-            <h3>Verify Your Identity</h3>
-            <h6>Please upload any of these documents to verify your Identity.</h6>
-            <div class="passport">
-              <h4>Govt. ID card <br>PassPort <br>Driving License.</h4>
-              <a href="#" class="don_icon"><i class="ion-android-done"></i></a>
+          <fieldset class="text-center">
+            <h4 class="boat-title text-start font-poppins">Choose Boat</h4>
+            <p class="text-start">What is the estimated size of your boat?</p>
+            <div class="row g-3">
+              <label class="col-md-4">
+                <input type="radio" name="test" value="big">
+                <img class="w-100" src="assets/img/regular-boat.webp" alt="Option 1">
+              </label>
+              <label class="col-md-4">
+                <input type="radio" name="test" value="big" checked>
+                <img class="w-100" src="assets/img/medium-boat.webp" alt="Option 2">
+              </label>
+              <label class="col-md-4">
+                <input type="radio" name="test" value="big">
+                <img class="w-100" src="assets/img/premium-boat.webp" alt="Option 2">
+              </label>
             </div>
-            <div class="input-group">
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="upload">
-                <label class="custom-file-label" for="upload"><i class="ion-android-cloud-outline"></i>Choose
-                  file</label>
+            <br /><br />
+            <h4 class="boat-title text-start font-poppins">About Boat Type</h4>
+            <p class="text-start">
+              This boat has specifications that are <span class="fw-bold">suitable for vacation trips with or with
+                families</span> who want to relax
+              and enjoy holidays, <span class="fw-bold">the user capacity of up to 20 adults</span> certainly makes it a
+              suitable boat for your
+              business as well, additional features that you can request can also increase the comfort of traveling with
+              this boat.
+            </p>
+            <p class="text-start">
+              It is also quieter because it is equipped with navigation equipment that makes <span class="fw-bold">the
+                user's security more
+                secure.</span>
+            </p>
+            <h5 class="boat-title text-start mb-2 font-poppins">Boat Construction Design Examples</h5>
+            <section id="portfolio" class="mb-5">
+              <div class="options">
+                <div class="option active"
+                  style="--optionBackground:url('../assets/img/portfolio/celia-construction01.webp');">
+                </div>
+                <div class="option"
+                  style="--optionBackground:url('../assets/img/portfolio/celia-construction01.webp');">
+                </div>
+                <div class="option"
+                  style="--optionBackground:url('../assets/img/portfolio/celia-construction01.webp');">
+                </div>
+                <div class="option"
+                  style="--optionBackground:url('../assets/img/portfolio/celia-construction01.webp');">
+                </div>
               </div>
-            </div>
-            <ul class="file_added">
-              <li>File Added:</li>
-              <li><a href="#"><i class="ion-paperclip"></i>national_id_card.webp</a></li>
-              <li><a href="#"><i class="ion-paperclip"></i>national_id_card_back.webp</a></li>
-            </ul>
-            <button type="button" class="action-button previous previous_button">Back</button>
-            <button type="button" class="next action-button">Continue</button>
+            </section>
+            <button class="btn btn-boat btn-lg action-button previous previous_button" type="button">Back</button>
+            <button class="btn btn-boat btn-lg next action-button me-4" type="button">Next</button>
+            <br /><br /><br />
           </fieldset>
-          <fieldset>
-            <h3>Create Security Questions</h3>
-            <h6>Please update your account with security questions</h6>
-            <div class="form-group">
-              <select class="product_select">
-                <option data-display="1. Choose A Question">1. Choose A Question</option>
-                <option>2. Choose A Question</option>
-                <option>3. Choose A Question</option>
-              </select>
+          <fieldset class="text-center">
+            <h4 class="boat-title text-start font-poppins">Choose Service</h4>
+            <p class="text-start">What are the work items that will be done by Riara's team?</p>
+            <div class="row g-3 text-center">
+              <label class="col-md-4">
+                <input type="checkbox" name="test" value="big">
+                <div class="card">
+                  <img src="assets/icon/service01.webp" class="w-25 m-auto mt-3 card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title font-poppins">Architectural Design</h5>
+                    <p class="card-text">Create boat architecture as needed with elegant design</p>
+                  </div>
+                </div>
+              </label>
+              <label class="col-md-4">
+                <input type="checkbox" name="test" value="big" checked>
+                <div class="card">
+                  <img src="assets/icon/service01.webp" class="w-25 m-auto mt-3 card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title font-poppins">Start From Scratch</h5>
+                    <p class="card-text">Build boat Construction from scratch with the riara team</p>
+                  </div>
+                </div>
+              </label>
+              <label class="col-md-4">
+                <input type="checkbox" name="test" value="big">
+                <div class="card">
+                  <img src="assets/icon/service02.webp" class="w-25 m-auto mt-3 card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title font-poppins">Boat Renovation</h5>
+                    <p class="card-text">Boat renovation to increase user comfort and safety</p>
+                  </div>
+                </div>
+              </label>
             </div>
-            <div class="form-group fg_2">
-              <input type="text" class="form-control" placeholder="Anwser here:">
+            <br /><br />
+            <h4 class="boat-title text-start font-poppins">Add Extra Features</h4>
+            <p class="text-start">More comfortable and safe with additional features as you wish</p>
+            <h5 class="text-start title font-poppins my-4">Tools and machines</h5>
+            <div class="row g-3 text-start">
+              <label class="col-md-6">
+                <input type="checkbox" name="test" value="big">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title font-poppins">Auxiliary Machine</h5>
+                    <p>2x Mitsubishi 6 cylinder D16</p>
+                    <textarea class="form-control" placeholder="*Silahkan beri catatan fitur disini (opsional)"
+                      id="floatingTextarea" style="height: 80px;"></textarea>
+                  </div>
+                </div>
+              </label>
+              <label class="col-md-6">
+                <input type="checkbox" name="test" value="big" checked>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title font-poppins">Auxiliary Machine</h5>
+                    <p>Mitsubishi 8 cylinder M20</p>
+                    <textarea class="form-control" placeholder="*Silahkan beri catatan fitur disini (opsional)"
+                      id="floatingTextarea" style="height: 80px;"></textarea>
+                  </div>
+                </div>
+              </label>
+              <label class="col-md-6">
+                <input type="checkbox" name="test" value="big">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title font-poppins">2x liferaft @ 15 pax</h5>
+                    <p>Standard Radar Inter</p>
+                    <textarea class="form-control" placeholder="*Silahkan beri catatan fitur disini (opsional)"
+                      id="floatingTextarea" style="height: 80px;"></textarea>
+                  </div>
+                </div>
+              </label>
+              <label class="col-md-6">
+                <input type="checkbox" name="test" value="big">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title font-poppins">GPS Navigator</h5>
+                    <p>Standard GPS Navigator</p>
+                    <textarea class="form-control" placeholder="*Silahkan beri catatan fitur disini (opsional)"
+                      id="floatingTextarea" style="height: 80px;"></textarea>
+                  </div>
+                </div>
+              </label>
             </div>
-            <div class="form-group">
-              <select class="product_select">
-                <option data-display="1. Choose A Question">1. Choose A Question</option>
-                <option>2. Choose A Question</option>
-                <option>3. Choose A Question</option>
-              </select>
+            <br />
+            <h5 class="text-start title font-poppins my-4">Safety and comfort</h5>
+            <div class="row g-3 text-start">
+              <label class="col-md-6">
+                <input type="checkbox" name="test" value="big" checked>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title font-poppins">Safety Package</h5>
+                    <p>2x liferaft @ 15 pax</p>
+                    <textarea class="form-control" placeholder="*Silahkan beri catatan fitur disini (opsional)"
+                      id="floatingTextarea" style="height: 80px;"></textarea>
+                  </div>
+                </div>
+              </label>
+              <label class="col-md-6">
+                <input type="checkbox" name="test" value="big" checked>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title font-poppins">Room</h5>
+                    <p>Cabin/Room</p>
+                    <textarea class="form-control" placeholder="*Silahkan beri catatan fitur disini (opsional)"
+                      id="floatingTextarea" style="height: 80px;"></textarea>
+                  </div>
+                </div>
+              </label>
             </div>
-            <div class="form-group fg_3">
-              <input type="text" class="form-control" placeholder="Anwser here:">
-            </div>
-            <button type="button" class="action-button previous previous_button">Back</button>
-            <a href="#" class="action-button">Finish</a>
+            <br /><br />
+            <button class="btn btn-boat btn-lg action-button previous previous_button" type="button">Back</button>
+            <button class="btn btn-boat btn-lg action-button me-4" type="button" data-bs-toggle="modal"
+              data-bs-target="#requestModal">Request Quotation</button>
+            <br /><br /><br />
           </fieldset>
         </form>
       </section>
-      <!-- END Multiform HTML -->
     </article>
   </main>
 
+  <!-- Modal -->
+  <div class="modal fade" id="requestModal" tabindex="-1" aria-labelledby="requestModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="max-width: fit-content;">
+      <div class="modal-content">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <img src="assets/img/success.png" class="img-fluid rounded-start" alt="Success">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5>Thanks! Your request has been sent.</h5>
+              <p>You can <span class="fw-bold">download details project</span> offer below or get it in your email, we
+                will contact you for the next
+                step.</p>
+              <div class="my-5">
+                <a href="#">
+                  <button type="button" class="btn btn-feature fw-bold" data-bs-dismiss="modal">
+                    Maybe, later
+                  </button>
+                </a>
+                <a href="#">
+                  <button type="button" class="btn btn-primary text-light ms-3">
+                    Download Detail Project
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Footer-->
   <footer class="footer">
     <div class="container">
@@ -268,6 +410,23 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js'></script>
   <script src="js/form.js?v=2"></script>
+  <script>
+    $(function () {
+      $('#search').on('keyup', function () {
+        var pattern = $(this).val();
+        $('.searchable-container .items').hide();
+        $('.searchable-container .items').filter(function () {
+          return $(this).text().match(new RegExp(pattern, 'i'));
+        }).show();
+      });
+    });
+  </script>
+  <script>
+    $("#portfolio .option").click(function () {
+      $("#portfolio .option").removeClass("active");
+      $(this).addClass("active");
+    });
+  </script>
 
 </body>
 
