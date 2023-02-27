@@ -11666,6 +11666,18 @@ html {
   padding-bottom: 10px; /* this can also control the position */
 }
 
+.title-blog {
+  background-image: linear-gradient(#222222 0 0);
+  background-position: bottom center; /*Adjust the background-position to move the line*/
+  background-size: 10% 1px; /*Adjust the background size to control length and height*/
+  background-repeat: no-repeat;
+  padding-bottom: 10px; /* this can also control the position */
+}
+
+/* .title-blog:hover {
+  background-image: linear-gradient(#15967d 0 0);
+} */
+
 .information .alert {
   position: relative;
   width: 50%;
@@ -12471,25 +12483,27 @@ img.goog-te-gadget-icon {
 }
 
 .news img {
-  width: 80px;
+  width: 90px;
+  height: 78px;
   float: left;
   border-radius: 5px;
 }
 
 .news h4 {
+  font-family: poppins;
   font-size: 15px;
   margin-left: 95px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.news h4 a {
-  color: #012970;
+.news h4 a, .blog a {
+  color: #222222;
   transition: 0.3s;
 }
 
-.news h4 a:hover {
-  color: #4154f1;
+.news h4 a:hover, .blog a:hover {
+  color: var(--bs-primary);
 }
 
 .news p {
