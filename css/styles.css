@@ -12453,6 +12453,13 @@ img.goog-te-gadget-icon {
     position: relative;
   }
   
+  label .card:before {
+    left: 0 !important;
+  }
+
+  .border-check .card:before {
+    left: 0 !important;
+  }
 }
 
 @media (max-width: 575px) {
@@ -12681,11 +12688,95 @@ img.goog-te-gadget-icon {
 
 /* CHECKED STYLES */
 [type=checkbox]:checked + .card {
-  outline: 2px solid #297284;
-  border-radius: 5px;
-  /* border-image: url("../assets/img/border-image.png"); */
+
+  /* content: "✓";
+  background-color: grey;
+  transform: scale(1); */
 }
 
 .font-poppins {
   font-family: Poppins;
+}
+
+
+/* input[type="checkbox"][id^="choose"] {
+  display: none;
+} */
+
+label .card {
+  /* border: 1px solid #000; */
+  /* padding: 10px; */
+  display: block;
+  position: relative;
+  /* margin: 10px; */
+  /* cursor: pointer; */
+  /* position: relative; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0.125rem solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.5rem;
+}
+
+label .card:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -15px;
+  left: 215px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+.border-check .card:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -15px;
+  left: 350px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+/* label .card img {
+  height: 100px;
+  width: 100px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+} */
+
+:checked + .card {
+  outline: 2px solid #297284;
+  border-radius: 5px;
+}
+
+:checked + .card:before {
+  content: "✓";
+  background-color: #297284;
+  transform: scale(1);
+}
+
+:checked + .card img {
+  transform: scale(0.9);
+  /* box-shadow: 0 0 5px #333; */
+  z-index: -1;
 }
