@@ -138,15 +138,15 @@
             <div class="row g-3">
               <label class="col-md-4">
                 <input type="radio" name="test" value="big">
-                <img class="w-100" src="assets/img/regular-boat.webp" alt="Option 1">
+                <img class="w-100 p-2" src="assets/img/regular-boat.webp" alt="Option 1">
               </label>
               <label class="col-md-4">
                 <input type="radio" name="test" value="big" checked>
-                <img class="w-100" src="assets/img/medium-boat.webp" alt="Option 2">
+                <img class="w-100 p-2" src="assets/img/medium-boat.webp" alt="Option 2">
               </label>
               <label class="col-md-4">
                 <input type="radio" name="test" value="big">
-                <img class="w-100" src="assets/img/premium-boat.webp" alt="Option 2">
+                <img class="w-100 p-2" src="assets/img/premium-boat.webp" alt="Option 2">
               </label>
             </div>
             <br /><br />
@@ -410,17 +410,6 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js'></script>
   <script src="js/form.js?v=2"></script>
-  <script>
-    $(function () {
-      $('#search').on('keyup', function () {
-        var pattern = $(this).val();
-        $('.searchable-container .items').hide();
-        $('.searchable-container .items').filter(function () {
-          return $(this).text().match(new RegExp(pattern, 'i'));
-        }).show();
-      });
-    });
-  </script>
   <script>
     $("#portfolio .option").click(function () {
       $("#portfolio .option").removeClass("active");
