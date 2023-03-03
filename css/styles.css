@@ -11986,7 +11986,7 @@ html {
     height: auto;
   max-width: 1000px;
   margin: 0 auto;
-  background: #ffffff;
+  background: transparent;
   z-index: 1;
 }
 
