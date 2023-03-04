@@ -12545,6 +12545,16 @@ img.goog-te-gadget-icon {
 }
 
  /* owl nav */
+ .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+  background: 0 0;
+  color: #000;
+  opacity: 0.7;
+  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+  border: none;
+  padding: 0!important;
+  font: inherit;
+}
+
  .owl-prev span,
  .owl-next span {
   display: block;
@@ -12556,7 +12566,8 @@ img.goog-te-gadget-icon {
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	background: #869791;
+	background: black;
+	/* background: #869791; */
  }
 
  .owl-prev span:hover,
@@ -12573,17 +12584,22 @@ img.goog-te-gadget-icon {
 
  .owl-prev {
   top: -23px;
-  left: -85px;
- }
-
-.trip .owl-prev {
-  top: -23px;
-  left: -101px;
+  left: -1px;
  }
 
  .owl-next {
   top: -23px;
-  right: -100px;
+  right: -15px;
+ }
+
+ .trip .owl-prev {
+  top: -26px;
+  left: -20px;
+ }
+
+ .trip .owl-next {
+  top: -26px;
+  right: -20px;
  }
 
  .trip {
