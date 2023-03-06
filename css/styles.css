@@ -12524,7 +12524,7 @@ img.goog-te-gadget-icon {
 .news h4 {
   font-family: poppins;
   font-size: 15px;
-  margin-left: 95px;
+  margin-left: 100px;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -12541,7 +12541,8 @@ img.goog-te-gadget-icon {
 .news p {
   font-size: 14px;
   color: #777777;
-  margin-left: 95px;
+  margin-left: 100px;
+  margin-bottom: 40px;
 }
 
  /* owl nav */
@@ -12795,4 +12796,22 @@ label .card:before {
   transform: scale(0.9);
   /* box-shadow: 0 0 5px #333; */
   z-index: -1;
+}
+
+#main #section {
+  /* width: 100%; */
+  /* min-height: 100vh; */
+  /* padding: 4rem 0; */
+}
+#main #section .lx-row {
+  /* flex-flow: wrap column; */
+  /* gap: 1rem; */
+}
+#main #section .lx-card {
+  /* background-color: white; */
+}
+#main #section model-viewer {
+  /* width: 100%; */
+  height: 30rem;
+  /* background-color: #70bcd1; */
 }
