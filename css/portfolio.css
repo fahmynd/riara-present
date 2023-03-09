@@ -310,7 +310,7 @@
   max-width: 600px;
   margin: 0px;
   border-radius: 10px;
-  background-size: 120%;
+  /* background-size: 120%; */
   /*&:active {
      transform:scale(0.9);
   }*/

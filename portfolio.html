@@ -153,12 +153,15 @@
                     <h5 class="boat-title my-4">3D View</h5>
                     <main id="main">
                         <section id="section" class="has-dflex-center">
-                            <model-viewer
+                            <model-viewer id="lazy-load"
                                 src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.glb?1542147958948"
                                 ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
                                 poster="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b%2Fposter-astronaut.png?v=1599079951717"
-                                alt="A 3D model of an astronaut!" shadow-intensity="1" camera-controls="true"
-                                auto-rotate="true" ar="true"></model-viewer>
+                                alt="A 3D model of an astronaut!" id="lazy-load" camera-controls touch-action="pan-y"
+                                reveal="manual">
+                                <div id="lazy-load-poster" slot="poster"></div>
+                                <div id="button-load" slot="poster">Load 3D Model</div>
+                            </model-viewer>
                         </section>
                     </main>
 
@@ -367,6 +370,9 @@
             $("#portfolio-result .option").removeClass("active");
             $(this).addClass("active");
         });
+
+        document.querySelector('#button-load').addEventListener('click',
+            () => document.querySelector('#lazy-load').dismissPoster());
     </script>
 </body>
 
