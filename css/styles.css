@@ -12847,3 +12847,29 @@ label .card:before {
     transform: translate3d(-50%, -50%, 0);
     z-index: 100;
   }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 0px 0px 20px rgb(1 41 112 / 10%); 
+    /* -webkit-border-radius: 10px;
+    border-radius: 10px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /* -webkit-border-radius: 10px; */
+    /* border-radius: 10px; */
+    /* background: #aab7cf transparent;  */
+    -webkit-box-shadow: inset 0 0 100px #297284; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: 0px 0px 20px rgb(1 41 112 / 10%); 
+}
+
+/* scrollbar-width: thin;
+    scrollbar-color: #aab7cf transparent;
+    box-shadow: 0px 0px 20px rgb(1 41 112 / 10%); */

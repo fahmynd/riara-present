@@ -22,6 +22,8 @@
         type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- GLightbox-->
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <!-- Owl Carousel-->
     <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.theme.default.min.css">
@@ -123,29 +125,43 @@
     <br />
 
     <section class="container">
-        <div class="row g-5">
+        <div class="row g-4">
             <div class="col-lg-8">
                 <div class="owl-carousel carousel-main">
                     <div class="item">
-                        <img src="assets/img/destination/destination01.webp" alt="">
+                        <a href="assets/img/destination/kuta-beach.webp" class="glightbox">
+                            <img src="assets/img/destination/destination01.webp" alt="">
+                        </a>
                     </div>
                     <div class="item">
-                        <img src="assets/img/destination/destination02.png" alt="">
+                        <a href="assets/img/destination/pura-uluwatu.webp" class="glightbox">
+                            <img src="assets/img/destination/destination02.png" alt="">
+                        </a>
                     </div>
                     <div class="item">
-                        <img src="assets/img/destination/destination03.png" alt="">
+                        <a href="assets/img/destination/kodingareng-keke-island.webp" class="glightbox">
+                            <img src="assets/img/destination/destination03.png" alt="">
+                        </a>
                     </div>
                     <div class="item">
-                        <img src="assets/img/destination/destination04.png" alt="">
+                        <a href="assets/img/destination/tanjung-benoa-beach.webp" class="glightbox">
+                            <img src="assets/img/destination/destination04.png" alt="">
+                        </a>
                     </div>
                     <div class="item">
-                        <img src="assets/img/destination/destination02.png" alt="">
+                        <a href="assets/img/destination/pura-uluwatu.webp" class="glightbox">
+                            <img src="assets/img/destination/destination02.png" alt="">
+                        </a>
                     </div>
                     <div class="item">
-                        <img src="assets/img/destination/destination03.png" alt="">
+                        <a href="assets/img/destination/kodingareng-keke-island.webp" class="glightbox">
+                            <img src="assets/img/destination/destination03.png" alt="">
+                        </a>
                     </div>
                     <div class="item">
-                        <img src="assets/img/destination/destination04.png" alt="">
+                        <a href="assets/img/destination/tanjung-benoa-beach.webp" class="glightbox">
+                            <img src="assets/img/destination/destination04.png" alt="">
+                        </a>
                     </div>
                 </div>
                 <article>
@@ -447,6 +463,7 @@
 
     <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
     <!-- Core theme JS -->
     <script src="js/scripts.js?v=2"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -461,11 +478,11 @@
     <script>
         $('.carousel-main').owlCarousel({
             items: 7,
-            loop: false,
+            loop: true,
             autoWidth: true,
-            autoplay: false,
-            // autoplayTimeout: 3000,
-            // autoplayHoverPause: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
             margin: 5,
             dots: false,
             nav: false,
@@ -482,6 +499,74 @@
                 },
             },
         });
+    </script>
+    <script>
+        var lightbox = GLightbox();
+        lightbox.on('open', (target) => {
+            console.log('lightbox opened');
+        });
+        var lightboxDescription = GLightbox({
+            selector: '.glightbox2'
+        });
+        var lightboxVideo = GLightbox({
+            selector: '.glightbox3'
+        });
+        lightboxVideo.on('slide_changed', ({
+            prev,
+            current
+        }) => {
+            console.log('Prev slide', prev);
+            console.log('Current slide', current);
+
+            const {
+                slideIndex,
+                slideNode,
+                slideConfig,
+                player
+            } = current;
+
+            if (player) {
+                if (!player.ready) {
+                    // If player is not ready
+                    player.on('ready', (event) => {
+                        // Do something when video is ready
+                    });
+                }
+
+                player.on('play', (event) => {
+                    console.log('Started play');
+                });
+
+                player.on('volumechange', (event) => {
+                    console.log('Volume change');
+                });
+
+                player.on('ended', (event) => {
+                    console.log('Video ended');
+                });
+            }
+        });
+
+        var lightboxInlineIframe = GLightbox({
+            selector: '.glightbox4'
+        });
+
+        /* var exampleApi = GLightbox({ selector: null });
+        exampleApi.insertSlide({
+            href: 'https://picsum.photos/1200/800',
+        });
+        exampleApi.insertSlide({
+            width: '500px',
+            content: '<p>Example</p>'
+        });
+        exampleApi.insertSlide({
+            href: 'https://www.youtube.com/watch?v=WzqrwPhXmew',
+        });
+        exampleApi.insertSlide({
+            width: '200vw',
+            content: document.getElementById('inline-example')
+        });
+        exampleApi.open(); */
     </script>
 </body>
 
