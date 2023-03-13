@@ -155,49 +155,72 @@
           <fieldset class="text-center">
             <h4 class="boat-title text-start font-poppins">Choose Boat</h4>
             <p class="text-start">What is the estimated size of your boat?</p>
-            <div class="row g-3">
-              <label class="col-md-4">
-                <input type="radio" name="test" value="big">
-                <img class="w-100 p-2" src="assets/img/regular-boat.webp" alt="Option 1">
+            <div class="row g-3 nav" role="tablist">
+              <label class="col-md-4" for="regularBoat">
+                <input type="radio" id="regularBoat" name="tab" value="big" data-bs-toggle="tab"
+                  data-bs-target="#regularBoatTab" checked>
+                <img class="w-100 p-2" src="assets/img/regular-boat.png" alt="Option 1">
               </label>
-              <label class="col-md-4">
-                <input type="radio" name="test" value="big" checked>
-                <img class="w-100 p-2" src="assets/img/medium-boat.webp" alt="Option 2">
+              <label class="col-md-4" for="mediumBoat">
+                <input type="radio" id="mediumBoat" name="tab" value="big" data-bs-toggle="tab"
+                  data-bs-target="#mediumBoatTab">
+                <img class="w-100 p-2" src="assets/img/medium-boat.png" alt="Option 2">
               </label>
-              <label class="col-md-4">
-                <input type="radio" name="test" value="big">
-                <img class="w-100 p-2" src="assets/img/premium-boat.webp" alt="Option 2">
+              <label class="col-md-4" for="premiumBoat">
+                <input type="radio" id="premiumBoat" name="tab" value="big" data-bs-toggle="tab"
+                  data-bs-target="#premiumBoatTab">
+                <img class="w-100 p-2" src="assets/img/premium-boat.png" alt="Option 2">
               </label>
             </div>
             <br /><br />
-            <h4 class="boat-title text-start font-poppins">About Boat Type</h4>
-            <p class="text-start">
-              This boat has specifications that are <span class="fw-bold">suitable for vacation trips with or with
-                families</span> who want to relax
-              and enjoy holidays, <span class="fw-bold">the user capacity of up to 20 adults</span> certainly makes it a
-              suitable boat for your
-              business as well, additional features that you can request can also increase the comfort of traveling with
-              this boat.
-            </p>
-            <p class="text-start">
-              It is also quieter because it is equipped with navigation equipment that makes <span class="fw-bold">the
-                user's security more
-                secure.</span>
-            </p>
-            <h5 class="boat-title text-start mb-2 font-poppins">Boat Construction Design Examples</h5>
-            <section id="portfolio" class="mb-5">
-              <div class="options">
-                <div class="option active"
-                  style="--optionBackground:url('../assets/img/portfolio/celia-construction01.webp');">
-                </div>
-                <div class="option" style="--optionBackground:url('../assets/img/portfolio/celia-construction02.png');">
-                </div>
-                <div class="option" style="--optionBackground:url('../assets/img/portfolio/celia-construction03.png');">
-                </div>
-                <div class="option" style="--optionBackground:url('../assets/img/portfolio/celia-construction04.png');">
-                </div>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="regularBoatTab" role="tabpanel">
+                <h4 class="boat-title text-start font-poppins">About Boat Type</h4>
+                <p class="text-start">
+                  This boat has specifications that are <span class="fw-bold">suitable for vacation trips with or with
+                    families</span> who want to relax
+                  and enjoy holidays, <span class="fw-bold">the user capacity of up to 20 adults</span> certainly makes
+                  it
+                  a
+                  suitable boat for your
+                  business as well, additional features that you can request can also increase the comfort of traveling
+                  with
+                  this boat.
+                </p>
+                <p class="text-start">
+                  It is also quieter because it is equipped with navigation equipment that makes <span
+                    class="fw-bold">the
+                    user's security more
+                    secure.</span>
+                </p>
+                <h5 class="boat-title text-start mb-2 font-poppins">Boat Construction Design Examples</h5>
+                <section id="portfolio" class="mb-5">
+                  <div class="options">
+                    <div class="option active"
+                      style="--optionBackground:url('../assets/img/portfolio/ciela-construction01.png');">
+                    </div>
+                    <div class="option"
+                      style="--optionBackground:url('../assets/img/portfolio/ciela-construction02.png');">
+                    </div>
+                    <div class="option"
+                      style="--optionBackground:url('../assets/img/portfolio/ciela-construction03.png');">
+                    </div>
+                    <div class="option"
+                      style="--optionBackground:url('../assets/img/portfolio/ciela-construction04.png');">
+                    </div>
+                  </div>
+                </section>
               </div>
-            </section>
+              <div class="tab-pane fade show" id="mediumBoatTab" role="tabpanel">
+                <h4 class="boat-title text-start font-poppins">About Boat Type</h4>
+                <h5 class="boat-title text-start mb-2 font-poppins">Boat Construction Design Examples</h5>
+              </div>
+              <div class="tab-pane fade show" id="premiumBoatTab" role="tabpanel">
+                <h4 class="boat-title text-start font-poppins">About Boat Type</h4>
+                <h5 class="boat-title text-start mb-2 font-poppins">Boat Construction Design Examples</h5>
+              </div>
+            </div>
+
             <button class="btn btn-boat btn-lg action-button previous previous_button" type="button"
               onclick="location.href='#page-top'">Back</button>
             <button class="btn btn-boat btn-lg next action-button me-4" type="button"
@@ -328,7 +351,8 @@
   </main>
   <img src="assets/img/bg01.webp" alt="Background" id="blobs-4" />
   <!-- Modal -->
-  <div class="modal fade" id="requestModal" tabindex="-1" aria-labelledby="requestModalLabel" aria-hidden="true">
+  <div class="modal fade" id="requestModal" tabindex="-1" data-bs-backdrop="false" aria-labelledby="requestModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" style="max-width: fit-content;">
       <div class="modal-content">
         <div class="row align-items-center">
@@ -435,6 +459,10 @@
       $("#portfolio .option").removeClass("active");
       $(this).addClass("active");
     });
+
+    // $('input[name="intervaltype"]').click(function () {
+    //   $(this).tab('show');
+    // });
   </script>
 
 </body>
